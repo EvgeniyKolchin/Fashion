@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Cайт_Kolchin_Evgeniy</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class='header'>
+			<!--<div class='header1'>
+				<div class='tel'>Call<a href='tel:+1234567890'><span class='callTel'>+1234567890</span></a></div>
+				<ul class='header2 footerList'>
+					<li><a href=''>My account</a></li>
+					<li><a href=''>Checkout</a></li>
+					<li><a href=''>Cart</a></li>
+					<li><a href=''>Shop</a></li>
+					<li><a href=''>Watchlist&nbsp;<span class='addsWatchList'>0<span></a></li>
+					<li class='color'><a href=''>$USD</a></li>
+					<li class='color'><img src='/image/flag.png' alt='язык' style='vertical-align: middle'><a href=''>En</a></li>
+				</ul>
+                <div class='row'></div>	
+			</div>-->
+
+			<div class='header1'>
+				<a href='http://kolchin.pa.infobox.ru/php/product.php' target='_blank'><div class='fashion'>Fashion</div></a>
+				<ul class='navig hidelist1'>
+					<li><a href=''>HOME</a></li>
+					<li><a href=''><div class='showlistArrow1'>WOMEN<div class='showlistArrow'>
+						<div class='listappendfromhover'>
+							<a href='http://wearesodroee.com/' target='_blank'><div class='listappendfromhoverli'>T-shirt</div></a>
+							<a href='http://wearesodroee.com/' target='_blank'><div class='listappendfromhoverli'>Pants</div></a>
+							<a href='http://wearesodroee.com/' target='_blank'><div class='listappendfromhoverli'>Coat</div></a>
+						</div>
+					</div>
+					</div></a></li>
+					<li><a href=''><div class='showlistArrow1'><div class='newhot newhot1'>MAN</div></div></a></li>
+					<li><a href=''><div class='newhot newhot2'>SHORTCODE</div></a></li>
+					<li><a href=''>BLOG</a></li>
+					<li><a href=''>PAGES</a></li>
+				</ul>
+			</div>
+		</div>
+        
+        <hr>
+    </div>    
+        <div class='row'></div>
+        
+    <div class='picture41'>
+        <div class='picture4'>COLLECTION OF THE WEEK</div>
+    </div>
+        
+    <div class="wrapper">   
+        <div id="block" class="content">
+            <% data.forEach(function(datum) {%>
+                <div class='rightblock'>
+                    <div class='rightblock1 rightblock1_1'>
+                        <img src='<%= datum.img_path %>' alt='woman'>
+                        <a href='product.php' title='woman'><div class='rightblock10'></div></a>
+                    </div>
+                    <a href='product.php'><div class='watch1'><%= datum.watch1 %></div></a>
+                    <div class='price1'><%= datum.price %></div>
+                    <div class='clear'></div>
+                </div>
+            <% }); %>
+        </div>
+        
+    <div class="row"></div>
+    
+    <div class='Up'>Up</div>
+    
+    <script type="text/javascript">
+        window.onscroll = function(){
+            var html = document.documentElement, body = document.body;
+            var BlkStyle = document.getElementById('block').style;
+                if(html.scrollTop>415||body.scrollTop>415) {
+                    BlkStyle.width="1215px";
+                } 
+                else BlkStyle.width="1015px";
+            }
+    </script>
+</body>
+</html>
