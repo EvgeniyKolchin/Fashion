@@ -4,7 +4,7 @@
 	<title>Cайт</title>
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<!--<link rel="stylesheet" type="text/css" href="css/reset.css">-->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -53,10 +53,10 @@
     </div>
         
     <div class="wrapper">   
-        <div class="content">
+        <div id="block" class="content">
         <div class='rightblock'>
             <div class='rightblock1 rightblock1_1'>
-                <img src='../image/sprite1_1.png' alt='woman'>
+                <img src='image/sprite1_1.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
             <a href='product.php'><div class='watch1'>Virtual Product</div></a>
@@ -65,7 +65,7 @@
         </div>
         <div class='rightblock'>
 			<div class='rightblock1 rightblock2'>
-				<img src='../image/sprite2.png' alt='woman'>
+				<img src='image/sprite2.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
 			<a href='product.php'><div class='watch1'>Virtual Product</div></a>
@@ -75,7 +75,7 @@
 
 		<div class='rightblock'>
 			<div class='rightblock1 rightblock3'>
-				<img src='../image/sprite_3.png' alt='woman'>
+				<img src='image/sprite_3.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
 			<a href='product.php'><div class='watch1'>Virtual Product</div></a>
@@ -85,7 +85,7 @@
 					
 		<div class='rightblock'>
 			<div class='rightblock1 rightblock4'>
-				<img src='../image/sprite_4.png' alt='woman'>
+				<img src='image/sprite_4.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
 			<a href='product.php'><div class='watch1'>Virtual Product</div></a>
@@ -95,7 +95,7 @@
 					
 		<div class='rightblock'>
 			<div class='rightblock1 rightblock5'>
-				<img src='../image/sprite_5.png' alt='woman'>
+				<img src='image/sprite_5.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
 			<a href='product.php'><div class='watch1'>Virtual Product</div></a>
@@ -105,7 +105,7 @@
 					
 		<div class='rightblock'>
 			<div class='rightblock1 rightblock6'>
-				<img src='../image/sprite_6.png' alt='woman'>
+				<img src='image/sprite_6.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
 			<a href='product.php'><div class='watch1'>Virtual Product</div></a>
@@ -115,7 +115,7 @@
 					
 		<div class='rightblock'>
 			<div class='rightblock1 rightblock7'>
-				<img src='../image/sprite_7.png' alt='woman'>
+				<img src='image/sprite_7.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
 			<a href='product.php'><div class='watch1'>Virtual Product</div></a>
@@ -125,28 +125,37 @@
 					
 		<div class='rightblock'>
 			<div class='rightblock1 rightblock8'>
-				<img src='../image/sprite_8.png' alt='woman'>
+				<img src='image/sprite_8.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
 			<a href='product.php'><div class='watch1'>Virtual Product</div></a>
 			<div class='price1'>$75.00</div>
 			<div class='clear'></div>
 		</div>
-		<!--<div class='rightblock'>
+		<div class='rightblock'>
 			<div class='rightblock1 rightblock9'>
-				<img src='../../image/sprite_9.png' alt='woman'>
+				<img src='image/sprite_9.png' alt='woman'>
 				<a href='product.php' title='woman'><div class='rightblock10'></div></a>
 			</div>
             <a href='product.php'><div class='watch1'>Virtual Product</div></a>
 			<div class='price1'>$75.00</div>
 			<div class='clear'></div>
-		</div>--> 
+		</div> 
         </div>
     </div>
         
     <div class="row"></div>
     
     <div class='Up'>Up</div>
-    
+    <script type="text/javascript">
+        window.onscroll = function(){
+            var html = document.documentElement, body = document.body;
+            var BlkStyle = document.getElementById('block').style;
+                if(html.scrollTop>415||body.scrollTop>415) {
+                    BlkStyle.width="1215px";
+                } 
+                else BlkStyle.width="1015px";
+            }
+    </script>
 </body>
 </html>

@@ -82,7 +82,7 @@ body {
 .header {
 	height: 50px;
 	background: #ffffff;
-	margin: 10px 0;
+	margin: 0;
 	font-family: kalinga;
 	font-size: 16px;
 	color:#4a4a4a;
@@ -143,7 +143,7 @@ body {
 
 hr {
 	color: #e5e5e5;
-	margin: 0 0 40px 0;
+	margin: 20px 0 40px 0;
 }
 
 @media screen and (max-width:640px) {
@@ -177,7 +177,7 @@ hr {
 	font-family: kalingab;
 	font-size: 14px;
 	color:#545454;
-	margin-top: 5px;
+	margin-top: 20px;
 	position: relative;
 }
 
@@ -198,6 +198,7 @@ hr {
 	font-family: Pacifico;
 	font-size: 40px;
 	color:#1bdce8;
+    margin-top: -5px;
 }
 
 .headborder{
@@ -206,7 +207,6 @@ hr {
 	border-left: 2px solid #e5e5e5;
 	padding: 5px 5px 0 35px;
 	width: 145px;
-	background-image:url(/image/cart.png);
 	background-repeat: no-repeat;
 	background-position-x: 105px;
 }
@@ -226,7 +226,6 @@ hr {
 	height: 5px;
 	right: -11px;
 	top: 4px;
-	background-image:url(/image/spritemain.png);
 	background-position-x: 10px;
 	cursor: pointer;
 }
@@ -297,7 +296,6 @@ hr {
 	height: 35px;
 	border: 2px solid #e5e5e5;
 	padding: 3px;
-	background-image: url(/image/spritemain.png);
 	margin-top: -10px;
 	cursor: pointer;
 	background-repeat: no-repeat;
@@ -418,7 +416,7 @@ hr {
 
 .picture41{
 	height: 300px;
-	background-image:url(/image/Gradient1.jpg);
+	background-image:url(../image/Gradient1.jpg);
     margin-bottom: 20px;
 }
 
@@ -436,7 +434,7 @@ hr {
 	font-size: 40px;
 	font-family: NexaBold;
 	color: #363636;
-	background-image:url(/image/5.jpg);
+	background-image:url(../image/5.jpg);
     background-repeat: no-repeat;
 	line-height: 25px;
 }
