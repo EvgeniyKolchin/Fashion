@@ -54,23 +54,31 @@
         
     <div class="wrapper">   
         <div id="block" class="content">
-            <% data.forEach(function(datum) {%>
-                <div class='rightblock'>
-                    <div class='rightblock1 rightblock1_1'>
-                        <img src='<%= datum.img_path %>' alt='woman'>
-                        <a href='product.php' title='woman'><div class='rightblock10'></div></a>
+            <div id="dynamic">
+                <% data.forEach(function(datum) {%>
+                    <div id=<%= "content"+datum.id %> class='rightblock'>
+                        <div class='rightblock1 rightblock1_1'>
+                            <img src='<%= datum.img_path %>' alt='woman'>
+                            <a href='product.php' title='woman'><div class='rightblock10'></div></a>
+                        </div>
+                        <a href='product.php'><div class='watch1'><%= datum.watch1 %></div></a>
+                        <div class='price1'><%= datum.price %></div>
+                        <div class='row'></div>
+                        <div class='del1' onclick="deleteEl(<%= datum.id %>)">delete</div>
                     </div>
-                    <a href='product.php'><div class='watch1'><%= datum.watch1 %></div></a>
-                    <div class='price1'><%= datum.price %></div>
-                    <div class='clear'></div>
-                </div>
-            <% }); %>
+                <% }); %>
+            </div>
+            <div class="row"></div>
+            <input id="inp" type="text" value="image/sprite.png"/>
+            <input id="inp1" type="text" value="$price"/>
+            <input id="inp2" type="text" value="description"/>
+            <div id='add' onclick="create()">Add new item</div>
         </div>
         
-    <div class="row"></div>
+        <div class="row"></div>
     
-    <div class='Up'>Up</div>
-    
+        <div class='Up'>Up</div>
+    </div>
     <script type="text/javascript">
         window.onscroll = function(){
             var html = document.documentElement, body = document.body;
@@ -80,6 +88,49 @@
                 } 
                 else BlkStyle.width="1015px";
             }
+            
+        function deleteEl(id){
+            var request = new XMLHttpRequest();
+            request.open('POST', '/delete?id=' +id);
+            request.send();
+            document.getElementById('content'+id).remove();
+        }
+        
+        function create(){
+            var img_path = document.getElementById('inp').value;
+            var price = document.getElementById('inp1').value;
+            var watch1 = document.getElementById('inp2').value;
+            var request = new XMLHttpRequest();
+            request.open('POST', '/new?img_path=' +img_path+ '&price='+price+ '&watch1='+watch1);
+            request.send();
+            var newDiv = document.createElement('div');
+            var newDiv1 = document.createElement('div');
+            var newDiv2 = document.createElement('div');
+            var newDiv3 = document.createElement('div');
+            var newDiv4 = document.createElement('div');
+            var newDiv5 = document.createElement('div');
+            var newImg = document.createElement('img');
+            var newA = document.createElement('a');
+            newDiv.className='rightblock';
+            newDiv1.className='rightblock1 rightblock1_1';
+            newDiv2.className='price1';
+            newDiv3.className='row';
+            newDiv4.className='del1';
+            newDiv5.className='watch1';
+            newImg.src=img_path;
+            newA.href='';
+            document.getElementById('dynamic').appendChild(newDiv);
+            newDiv.appendChild(newDiv1);
+            newDiv.appendChild(newA);
+            newA.appendChild(newDiv5);
+            newDiv.appendChild(newDiv2);
+            newDiv.appendChild(newDiv3);
+            newDiv.appendChild(newDiv4);
+            newDiv1.appendChild(newImg);
+            newDiv4.innerHTML="delete";
+            newDiv2.innerHTML=price;
+            newDiv5.innerHTML=watch1;
+        }
     </script>
 </body>
 </html>

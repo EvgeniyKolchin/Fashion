@@ -310,7 +310,6 @@ hr {
 /* Middle
 -----------------------------------------------------------------------------*/
 .content {
-	background: #fff9f9;
 	width: 1015px;
 	margin: 0 auto;
 }
@@ -446,11 +445,52 @@ hr {
 	font-size: 15px;
 	color: #fdfdfd;
 	background: #00d8e5;
-	float: left;
 	text-align: center;
 	line-height: 42px;
 	margin-left: 25px;
 	cursor:pointer;
     position: relative;
     float: right;
+}
+
+#add{
+	width: 134px;
+	height: 42px;
+	font-family: kalingab;
+	font-size: 20px;
+	color: #fdfdfd;
+	background: #00d8e5;
+	float: left;
+	text-align: center;
+	line-height: 42px;
+	margin: 0 20px;
+	cursor:pointer;
+}
+
+.del1{
+	font-size: 18px;
+	font-family: kalingab;
+	color: #00e0be;  
+    cursor:pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.del1:hover{
+    color: red;
+}
+
+#inp, #inp1, #inp2{
+    width: 280px;
+	height: 30px;
+	font-family: kalingab;
+	font-size: 18px;
+	float: left;
+	text-align: center;
+	margin: 4px 0 0 20px;
+}
+
+#inp1 {
+    width: 50px;
 }
