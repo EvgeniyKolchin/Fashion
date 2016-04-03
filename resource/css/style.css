@@ -128,8 +128,9 @@ hr {
 
 .header3{
     position: absolute;
-    top: 150px;
+    top: 410px;
     right: 1px;
+    background-color: #c8dce7;
     margin-top: 15px;
 }
 
@@ -240,22 +241,6 @@ hr {
 
 .showlistArrowdop{
 	top: 22px;
-}
-
-.zeroicon{
-	margin-top: -12px;
-	position: absolute;
-	width: 18px;
-	height: 18px;
-	background: #04d7e4;		
-	top: 0px;
-	right: 8px;
-	font-family: kalingab;
-	font-size: 12px;
-	color:#8a8a8a;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 20px;
 }
 
 .textSearch input{
