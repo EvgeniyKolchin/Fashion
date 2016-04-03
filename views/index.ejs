@@ -10,20 +10,6 @@
 <body>
     <div class="wrapper">
         <div class='header'>
-			<!--<div class='header1'>
-				<div class='tel'>Call<a href='tel:+1234567890'><span class='callTel'>+1234567890</span></a></div>
-				<ul class='header2 footerList'>
-					<li><a href=''>My account</a></li>
-					<li><a href=''>Checkout</a></li>
-					<li><a href=''>Cart</a></li>
-					<li><a href=''>Shop</a></li>
-					<li><a href=''>Watchlist&nbsp;<span class='addsWatchList'>0<span></a></li>
-					<li class='color'><a href=''>$USD</a></li>
-					<li class='color'><img src='/image/flag.png' alt='язык' style='vertical-align: middle'><a href=''>En</a></li>
-				</ul>
-                <div class='row'></div>	
-			</div>-->
-
 			<div class='header1'>
 				<a href='http://kolchin.pa.infobox.ru/php/product.php' target='_blank'><div class='fashion'>Fashion</div></a>
 				<ul class='navig hidelist1'>
@@ -43,6 +29,16 @@
 				</ul>
 			</div>
 		</div>
+        
+        <div class='header3'>
+				<ul>
+					<li><a href=''>My account</a></li>
+					<li><a href=''>Checkout</a></li>
+					<li><a href=''>Cart</a></li>
+					<li><a href=''>Shop</a></li>
+				</ul>
+                <div class='row'></div>	
+			</div>
         
         <hr>
     </div>    
@@ -111,7 +107,8 @@
             var newDiv5 = document.createElement('div');
             var newImg = document.createElement('img');
             var newA = document.createElement('a');
-            newDiv.className='rightblock';
+           
+           newDiv.className='rightblock';
             newDiv1.className='rightblock1 rightblock1_1';
             newDiv2.className='price1';
             newDiv3.className='row';
@@ -119,6 +116,7 @@
             newDiv5.className='watch1';
             newImg.src=img_path;
             newA.href='';
+            
             document.getElementById('dynamic').appendChild(newDiv);
             newDiv.appendChild(newDiv1);
             newDiv.appendChild(newA);

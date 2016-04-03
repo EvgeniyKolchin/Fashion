@@ -95,7 +95,7 @@ body {
 }
 
 .header1{
-	width: 1215px;
+	width: 1200px;
     margin: 0 auto;
 }
 
@@ -104,37 +104,6 @@ body {
 	width: 640px;
 	margin: 0 auto;
 }
-}
-
-@media screen and (max-width:640px) {
-	.footerList{
-		display: none;
-	}
-}
-
-.tel{
-	height: 50px;
-	width: 143px;
-	padding: 20px 25px 20px 0;
-	color:#585757;
-	font-size: 14px;
-	font-family: Raleway;
-	border-right: 2px solid #e5e5e5;
-	margin: 0;
-}
-
-.callTel{
-	color:#585757;
-	font-size: 14px;
-	font-family: Raleway;
-	margin-left: 3px;
-}
-
-.header2 li{
-	height: 50px;
-	border-right: 2px solid #e5e5e5;
-	padding: 20px 20px 20px 20px;
-	margin-right: 0;
 }
 
 .color{
@@ -152,13 +121,29 @@ hr {
 	}
 }
 
-.tel, .header ul li{
+.header ul li{
 	display: block;
 	float: left;
 }
 
+.header3{
+    position: absolute;
+    top: 150px;
+    right: 1px;
+    margin-top: 15px;
+}
+
+.header3 ul li{
+    height: 30px;
+    list-style-type: none;
+	padding: 0 20px 20px 20px;
+    font-family: kalingab;
+	font-size: 24px;
+	color:#545454;
+}
+
 @media screen and (max-width:640px) {
-	.tel, ul.hidelist1 {
+	ul.hidelist1 {
 		display: none;
 	}
 }
